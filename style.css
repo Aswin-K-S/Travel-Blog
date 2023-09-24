@@ -1,0 +1,565 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Inclusive+Sans&family=Kanit:wght@500&family=Lobster&family=Noto+Sans+HK:wght@900&family=Poppins:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.bg-image img {
+    position: relative;
+    top: -100px;
+
+    object-fit: cover;
+    margin-left: -60px;
+    /* Add the blur effect */
+    filter: blur(1px);
+    -webkit-filter: blur(4px);
+
+
+}
+
+.overlay img {
+    position: absolute;
+    top: 85px;
+    left: 350px;
+    height: 700px;
+    z-index: 1;
+    filter: drop-shadow(8px 8px 10px black);
+    transition: all .5s;
+
+}
+
+.navbar {
+    background: linear-gradient(180.2deg, rgb(30, 33, 48) 6.8%, rgb(62, 79, 88) 131%);
+}
+
+.overlay2 h1 {
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    font-size: 180px;
+    top: 10%;
+    left: 280px;
+
+}
+
+.overlay2 h2 {
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    font-size: 180px;
+    top: 10%;
+    left: 850px;
+}
+
+
+.overlay3 h1 {
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    font-size: 180px;
+    top: 500px;
+    left: 170px;
+
+}
+
+.overlay3 h2 {
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    font-size: 180px;
+    top: 500px;
+    left: 910px;
+}
+
+.overlay4 a {
+    position: absolute;
+    top: 85%;
+    left: 45%;
+    z-index: 1;
+    transition: all .4s;
+}
+.overlay4 a:hover{
+    box-shadow: 5px 5px 10px rgb(226, 204, 8);
+    transform: translateY(-10px);
+}
+
+.text {
+    position: absolute;
+    top: 118%;
+
+}
+
+p {
+
+    margin-left: 20px;
+    font-family: 'Inclusive Sans', sans-serif;
+    text-align: justify;
+}
+
+#sec1 {
+    background-color: #1D1F26;
+    margin-top: 20px;
+    
+
+}
+
+.col-2 img {
+    box-shadow: 8px 8px 15px black;
+    height: 450px;
+    width: 300px;
+    margin-left: 40px;
+    margin-bottom: 30px;
+    transition: all .5s;
+}
+
+.col-2 img:hover {
+    transform: translateY(-20px);
+}
+
+/* Section 2 */
+#sec2 {
+
+    background-image: url('laos-found-bg-image.jpg');
+    background-size: 1920px 1000px;
+
+}
+#sec2 h1{
+  color: lightgoldenrodyellow;
+}
+.card{
+    box-shadow: 8px 8px 15px;
+    transition: all .4s;
+}
+.card:hover{
+    transform: translateY(-20px)
+}
+
+
+
+/* Variables */
+:root {
+  --main-green: #79dd09;
+  --main-green-rgb-015: rgba(121, 221, 9, 0.1);
+  --main-yellow: #bdbb49;
+  --main-yellow-rgb-015: rgba(189, 187, 73, 0.1);
+  --main-red: #bd150b;
+  --main-red-rgb-015: rgba(189, 21, 11, 0.1);
+  --main-blue: #0076bd;
+  --main-blue-rgb-015: rgba(0, 118, 189, 0.1);
+}
+
+/* This pen */
+body {
+    font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  text-rendering: optimizeLegibility;
+  font-weight: initial;
+  scroll-behavior: smooth;
+}
+
+.dark {
+    background-color: #1D1F26;
+  
+}
+
+.light {
+  background: #f3f5f7;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+#pageHeaderTitle {
+  margin: 2rem 0;
+  text-transform: uppercase;
+  font-family: 'Kanit', sans-serif;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+/* Cards */
+.postcard {
+  flex-wrap: wrap;
+  display: flex;
+  box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
+  border-radius: 10px;
+  margin: 0 0 2rem 0;
+  overflow: hidden;
+  position: relative;
+  color: #ffffff;
+}
+
+.postcard.dark {
+  background-color: #18151f;
+}
+
+.postcard.light {
+  background-color: #e1e5ea;
+}
+
+.postcard.dark .t-dark {
+  color: #18151f;
+}
+
+.postcard a {
+  color: inherit;
+}
+
+.postcard h1,
+.postcard .h1 {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.postcard .small {
+  font-size: 80%;
+}
+
+.postcard .postcard__title {
+  font-size: 1.75rem;
+}
+
+.postcard .postcard__img {
+  max-height: 180px;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+}
+
+.postcard .postcard__img_link {
+  display: contents;
+}
+
+.postcard .postcard__bar {
+  width: 50px;
+  height: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  background-color: #424242;
+  transition: width 0.2s ease;
+}
+
+.postcard .postcard__text {
+  padding: 1.5rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.postcard .postcard__preview-txt {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: justify;
+  height: 100%;
+}
+
+.postcard .postcard__tagbox {
+  display: flex;
+  flex-flow: row wrap;
+  font-size: 14px;
+  margin: 20px 0 0 0;
+  padding: 0;
+  justify-content: center;
+}
+
+.postcard .postcard__tagbox .tag__item {
+  display: inline-block;
+  background: rgba(83, 83, 83, 0.4);
+  border-radius: 3px;
+  padding: 2.5px 10px;
+  margin: 0 5px 5px 0;
+  cursor: default;
+  user-select: none;
+  transition: background-color 0.3s;
+}
+
+.postcard .postcard__tagbox .tag__item:hover {
+  background: rgba(83, 83, 83, 0.8);
+}
+
+.postcard:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(-70deg, #424242, transparent 50%);
+  opacity: 1;
+  border-radius: 10px;
+}
+
+.postcard:hover .postcard__bar {
+  width: 100px;
+}
+
+@media screen and (min-width: 769px) {
+  .postcard {
+    flex-wrap: inherit;
+  }
+
+  .postcard .postcard__title {
+    font-size: 2rem;
+  }
+
+  .postcard .postcard__tagbox {
+    justify-content: start;
+  }
+
+  .postcard .postcard__img {
+    max-width: 300px;
+    max-height: 100%;
+    transition: transform 0.3s ease;
+  }
+
+  .postcard .postcard__text {
+    padding: 3rem;
+    width: 100%;
+  }
+
+  .postcard.media.postcard__text:before {
+    content: "";
+    position: absolute;
+    display: block;
+    background: #18151f;
+    top: -20%;
+    height: 130%;
+    width: 55px;
+  }
+
+  .postcard:hover .postcard__img {
+    transform: scale(1.1);
+  }
+
+  .postcard:nth-child(2n+1) {
+    flex-direction: row;
+  }
+
+  .postcard:nth-child(2n+0) {
+    flex-direction: row-reverse;
+  }
+
+  .postcard:nth-child(2n+1) .postcard__text::before {
+    left: -12px !important;
+    transform: rotate(4deg);
+  }
+
+  .postcard:nth-child(2n+0) .postcard__text::before {
+    right: -12px !important;
+    transform: rotate(-4deg);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .postcard .postcard__text {
+    padding: 2rem 3.5rem;
+  }
+
+  .postcard .postcard__text:before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: -20%;
+    height: 130%;
+    width: 55px;
+  }
+
+  .postcard.dark .postcard__text:before {
+    background: #18151f;
+  }
+
+  .postcard.light .postcard__text:before {
+    background: #e1e5ea;
+  }
+}
+
+/* COLORS */
+.postcard .postcard__tagbox .green.play:hover {
+  background: var(--main-green);
+  color: black;
+}
+
+.green .postcard__title:hover {
+  color: var(--main-green);
+}
+
+.green .postcard__bar {
+  background-color: var(--main-green);
+}
+
+.green:before {
+  background-image: linear-gradient(-30deg, var(--main-green-rgb-015), transparent 50%);
+}
+
+.green:nth-child(2n)::before {
+  background-image: linear-gradient(30deg, var(--main-green-rgb-015), transparent 50%);
+}
+
+.postcard .postcard__tagbox .blue.play:hover {
+  background: var(--main-blue);
+}
+
+.blue .postcard__title:hover {
+  color: var(--main-blue);
+}
+
+.blue .postcard__bar {
+  background-color: var(--main-blue);
+}
+
+.blue:before {
+  background-image: linear-gradient(-30deg, var(--main-blue-rgb-015), transparent 50%);
+}
+
+.blue:nth-child(2n)::before {
+  background-image: linear-gradient(30deg, var(--main-blue-rgb-015), transparent 50%);
+}
+
+.postcard .postcard__tagbox .red.play:hover {
+  background: var(--main-red);
+  color: black;
+}
+
+.red .postcard__title:hover {
+  color: var(--main-red);
+}
+
+.red .postcard__bar {
+  background-color: var(--main-red);
+}
+
+.red:before {
+  background-image: linear-gradient(-30deg, var(--main-red-rgb-015), transparent 50%);
+}
+
+.red:nth-child(2n)::before {
+  background-image: linear-gradient(30deg, var(--main-red-rgb-015), transparent 50%);
+}
+
+.postcard .postcard__tagbox .yellow.play:hover {
+  background: var(--main-yellow);
+  color: black;
+}
+
+.yellow .postcard__title:hover {
+  color: var(--main-yellow);
+}
+
+.yellow .postcard__bar {
+  background-color: var(--main-yellow);
+}
+
+.yellow:before {
+  background-image: linear-gradient(-30deg, var(--main-yellow-rgb-015), transparent 50%);
+}
+
+.yellow:nth-child(2n)::before {
+  background-image: linear-gradient(30deg, var(--main-yellow-rgb-015), transparent 50%);
+}
+
+@media screen and (min-width: 769px) {
+  .green:before {
+    background-image: linear-gradient(-80deg, var(--main-green-rgb-015), transparent 50%);
+  }
+
+  .green:nth-child(2n)::before {
+    background-image: linear-gradient(80deg, var(--main-green-rgb-015), transparent 50%);
+  }
+
+  .blue:before {
+    background-image: linear-gradient(-80deg, var(--main-blue-rgb-015), transparent 50%);
+  }
+
+  .blue:nth-child(2n)::before {
+    background-image: linear-gradient(80deg, var(--main-blue-rgb-015), transparent 50%);
+  }
+
+  .red:before {
+    background-image: linear-gradient(-80deg, var(--main-red-rgb-015), transparent 50%);
+  }
+
+  .red:nth-child(2n)::before {
+    background-image: linear-gradient(80deg, var(--main-red-rgb-015), transparent 50%);
+  }
+
+  .yellow:before {
+    background-image: linear-gradient(-80deg, var(--main-yellow-rgb-015), transparent 50%);
+  }
+
+  .yellow:nth-child(2n)::before {
+    background-image: linear-gradient(80deg, var(--main-yellow-rgb-015), transparent 50%);
+  }
+}
+
+.pics{
+    background-color: #1D1F26;
+}
+@media screen and (max-width:400px){
+  .navbar{
+    width: 400px;
+  }
+  .bg-image img{
+   
+    height: 700px;
+    
+   width: 410px;
+  }
+  .overlay img{
+    left: -100px;
+    height: 500px;
+    top: 145px;
+  }
+  .overlay2 h1 {
+   
+    
+    font-size: 50px;
+    top: 200px;
+    left: 20px;
+
+}
+
+.overlay2 h2 {
+    
+    font-size: 50px;
+    top: 200px;
+    left: 250px;
+}
+
+
+.overlay3 h1 {
+ 
+    font-size: 50px;
+    top: 300px;
+    left:20px;
+
+}
+
+.overlay3 h2 {
+  
+    font-size: 50px;
+    top:300px;
+    left: 240px;
+}
+
+.overlay4 a {
+    position: absolute;
+    top: 95%;
+    left: 35%;
+    z-index: 1;
+    transition: all .4s;
+}
+.row{
+  display: block;
+}
+.col-8{
+  width: 400px;
+}
+#sec2 h1{
+  color: #18151f;
+}
+.col-3{
+  margin-top: 20px;
+}
+}
